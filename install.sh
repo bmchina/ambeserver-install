@@ -43,8 +43,8 @@ ls -R etc
 cp -r etc /
 systemctl daemon-reload
 systemctl restart udev
-ls -l /dev/ThumbDV
-echo "Endabling ThumbDV™ ..."
-systemctl start ambeserver@ThumbDV
-systemctl enable ambeserver@ThumbDV
-systemctl status ambeserver@ThumbDV
+ls -l /dev/ttyACM0
+echo "Endabling NanoDV™ ..."
+systemctl start ambeserver@ttyACM0
+systemctl enable ambeserver@ttyACM0
+systemctl status ambeserver@ttyACM0
